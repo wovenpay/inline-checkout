@@ -1,35 +1,27 @@
-<html>
-
-<head>
-</head>
-
 <body>
-	<h3>Checkout Pay Buttons</h3>
-	<div>
-	<form action="your-server.com/endpoint" method="POST">
-		<script	
-			src="https://unpkg.com/wovenpay-inline@1.0.0/woven.inline.js"
-			class="woven-paybtn"
-			data-amount=100
-			data-label="Desq Markket"
-			data-name="Pay"
-			data-reference="test@test.com"
-			data-pubkey="ghhfg">
-		</script>
-	</form>
-
-	<form action="your-server.com/endpoint" method="POST">
-		<script	
-			src="https://unpkg.com/wovenpay-inline@1.0.0/woven.inline.js"
-			class="woven-paybtn"
-			data-amount=100
-			data-label="Desq Markket"
-			data-name="Pay"
-			data-reference="test@test.com"
-			data-pubkey="ghhfg">
-		</script>
-	</form>
-
-	</div>	
+  <h3>Checkout</h3>
+  <div>
+  <form action="your-server.com/endpoint" method="POST">
+    <script	
+      src="https://unpkg.com/wovenpay-inline@1.0.0/woven.inline.js"
+      class="woven-paybtn"
+      data-amount=100
+      data-label="Desq Markket"
+      data-name="Pay"      
+      data-customer-email="customer@test.com"
+      data-order-description="Payment of 10 sweets"
+      data-pubkey="pub_yt67yhgrtYu78HfbmkldfTy56gDsd">
+     </script>
+    </form>
+    <form action="your-server.com/endpoint" method="POST">
+     <script	
+      src="https://unpkg.com/wovenpay-inline@1.0.0/woven.inline.js"
+      class="woven-paybtn"
+      data-amount=1700
+      data-label="Desq Markket"      
+      data-reference="test@test.com"
+      data-pubkey="pub_yt67yhgrtYu78HfbmkldfTy56gDsd">
+     </script>
+    </form>	
+   </div>	
 </body>
-</html>
