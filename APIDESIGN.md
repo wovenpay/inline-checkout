@@ -28,6 +28,10 @@ woven.on('checkout.created', callback);
 woven.on('checkout.response', callback);
 woven.on('checkout.error', callback);
 
+//OR
+woven.on(['checkout.error','checkout.response'], callback);
+
+
 // Forcefully close the checkout form
 woven.close(); 
 ```
