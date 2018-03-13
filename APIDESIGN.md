@@ -21,12 +21,12 @@ const payload = {
 
 woven.checkout(payload, [callback]? optional);
 
-<!-- Add Event Listeners -->
+// Add Event Listeners
 woven.on('checkout.closed', callback);
 woven.on('checkout.created', callback);
 woven.on('checkout.response', callback);
 woven.on('checkout.error', callback);
 
-<!-- Forcefully close the checkout form -->
+// Forcefully close the checkout form
 woven.close(); 
 ```
