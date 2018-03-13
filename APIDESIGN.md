@@ -31,7 +31,7 @@ btn.addEventListener("click", function () {
 // Add Event Listeners
 woven.on('checkout.closed', callback);
 woven.on('checkout.loaded', callback);
-woven.on('checkout.response', callback);
+woven.on('checkout.complete', callback);
 woven.on('checkout.error', callback);
 
 // Forcefully close the checkout form
