@@ -10,7 +10,7 @@ const woven = new WovenPay(pubkey);
 const callback = (response) => console.log(response);
 
 const payload = {
-  method: "mobile" // Only mobile options will be available. Defaults to "all" if not provided
+  method: "mobile" // Only mobile options will be available not cards. For cards only use method: "card". Defaults to "all" if not provided
   amount: 20,
   label: "Valid Shop",
   customer: {
