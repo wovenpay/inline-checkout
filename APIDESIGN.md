@@ -30,7 +30,7 @@ btn.addEventListener("click", function () {
 
 // Add Event Listeners
 woven.on('checkout.closed', callback);
-woven.on('checkout.created', callback);
+woven.on('checkout.loaded', callback);
 woven.on('checkout.response', callback);
 woven.on('checkout.error', callback);
 
