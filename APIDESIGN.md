@@ -2,7 +2,7 @@
 
 const pubkey = "pk_y9nZvo4LLVtdEHzTDJH8M9";
 
-const woven = new WovenCheckout(pubkey);
+const woven = new WovenPay(pubkey);
 
 const callback = (response) => console.log(response);
 
