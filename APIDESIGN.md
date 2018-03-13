@@ -22,7 +22,11 @@ const payload = {
   reference: "myuniquereference"  
 }
 
-woven.checkout(payload, [callback]? optional);
+// Create your own checkout button
+let btn = document.createElement("button");
+btn.addEventListener("click", function () {
+  woven.checkout(payload, [callback]? optional);
+});
 
 // Add Event Listeners
 woven.on('checkout.closed', callback);
