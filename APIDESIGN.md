@@ -7,7 +7,7 @@ const woven = new WovenPay();
 const callback = (response) => console.log(response);
 
 const payload = {
-  method: "mobile" // Only mobile options will be available. Defaults to "all" if not provided
+  method: "mobile", // Only mobile options will be available. Defaults to "all" if not provided
   amount: 20,
   label: "Valid Shop",
   customer: {
@@ -20,7 +20,7 @@ const payload = {
   reference: "myuniquereference"  
 }
 
-woven.checkout(payload, [callback]? optional);
+woven.checkout(payload);
 
 // Add Event Listeners
 woven.on('checkout.closed', callback);
