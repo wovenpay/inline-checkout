@@ -1,3 +1,6 @@
+Proposed inline Js API.
+Still trying to simplify it.
+
 ```js
 
 const pubkey = "pk_y9nZvo4LLVtdEHzTDJH8M9";
