@@ -7,7 +7,7 @@ const pubkey = "pk_y9nZvo4LLVtdEHzTDJH8M9";
 
 const woven = new WovenPay(pubkey);
 
-const callback = (response) => console.log(response);
+const callback = (ev) => console.log(ev);
 
 const payload = {
   method: "mobile" // Only mobile options will be available not cards. For cards only use method: "card". Defaults to "all" if not provided
